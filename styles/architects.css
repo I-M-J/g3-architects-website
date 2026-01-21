@@ -131,6 +131,7 @@ main > section {
 
 .features {
     gap: 146px;
+    align-items: center;
 }
 
 .feature-card {
@@ -141,13 +142,36 @@ main > section {
     margin-bottom: 20px;
 }
 
+#feature-heading, .feature-card {
+    max-width: 576px;
+    box-sizing: border-box;
+}
+
 .feature-card .feature-title {
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0;   
 }
 
+#experience-badge {
+    padding: 45.5px 42px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 500;
+    margin-left: -92px;
+    margin-top: -123px;
+}
+
+#experience-year {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4.4rem;
+}
+
+.featured-architect img {
+    width: 100%;
+}
 /* some facts related styles */
 .facts-container {
     display: grid;
@@ -201,11 +225,32 @@ main > section {
     filter: grayscale(100%);
 }
 
+/* footer related styles */
+footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 130px 0 216px;
+}
+
+.footer {
+    text-align: center;
+    padding: 2.4rem 0;
+    background-color: #FFF4E7;
+    border-radius: 8px;
+}
+
+.footer-text {
+    margin: 0;
+    padding: 0;
+    font-size: 1.25rem;
+}
+
 /* Responsive media Query */
 @media screen and (max-width: 576px) {
     .navbar,
     .nav-links,
-    .teams {
+    .teams,
+    .features {
         flex-direction: column;
     }
 
@@ -235,11 +280,25 @@ main > section {
         margin-right: auto;
         text-align: center;
     }
+
+    #experience-badge {
+        max-width: 75%;
+        margin: 20px auto;
+    }
+
+    .featured-architect {
+        text-align: center;
+    }
+
+    footer {
+        padding: 60px 0 80px;
+    }
 }
 
 /* Medium Size Device */
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    .teams {
+    .teams,
+    .features {
         flex-direction: column;
     }
 
@@ -256,5 +315,17 @@ main > section {
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-evenly;
         justify-items: center;
+    }
+
+    #experience-badge {
+        margin: 20px 0 0;
+    }
+
+    .featured-architect {
+        text-align: center;
+    }
+
+    .featured-architect img {
+        width: 80%;
     }
 }
