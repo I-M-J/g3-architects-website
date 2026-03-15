@@ -246,7 +246,7 @@ footer {
 }
 
 /* Responsive media Query */
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
     .navbar,
     .nav-links,
     .teams,
@@ -284,10 +284,17 @@ footer {
     #experience-badge {
         max-width: 75%;
         margin: 20px auto;
+        padding: 22.75px 14px;
     }
 
     .featured-architect {
         text-align: center;
+    }
+
+    #experience-year {
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 3.4rem;
     }
 
     footer {
@@ -296,7 +303,7 @@ footer {
 }
 
 /* Medium Size Device */
-@media screen and (min-width: 576px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
     .teams,
     .features {
         flex-direction: column;
