@@ -296,7 +296,7 @@ footer {
 }
 
 /* Medium Size Device */
-@media screen and (min-width: 576px) and (max-width: 992px) {
+@media screen and (min-width: 576px) and (max-width: 1200px) {
     .teams,
     .features {
         flex-direction: column;
@@ -327,5 +327,11 @@ footer {
 
     .featured-architect img {
         width: 80%;
+    }
+
+    .some-facts-heading {
+        max-width: 576px;
+        margin: 0 auto;
+        text-align: center;
     }
 }
